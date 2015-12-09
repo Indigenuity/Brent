@@ -20,6 +20,7 @@ public class FBPageWorker  extends UntypedActor {
 			System.out.println("Got undoable work in Fetching worker : " + workItem.getDirective());
 			getSender().tell(workItem, getSelf());
 			return;   
+			//This is a test of committing
 		}
 		try{
 			Endpoint<?> endpoint = (Endpoint<?>) workItem.getDirective();
